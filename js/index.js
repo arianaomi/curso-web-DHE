@@ -3,32 +3,39 @@
     * obtener, cambiar, agregar o eliminar elementos HTML
 
   -Los métodos DOM son acciones que se pueden realizar
-  -Las Propiedades DOM son valores qye se pueden establecer o cambiar
+  -Las Propiedades DOM son valores que se pueden establecer o cambiar
   ! En el DOM, todos los elementos se definen como OBJETOS
 */
 
-/* intro */
-console.log(document.title) // Mostrando titulo
-document.title = 'DOM' // Manipulando elemento
-console.log(document.body)
+/* Intro */
+console.log(document.title)
+document.title = 'DOM'
 
-var h1 = document.h1
-console.log(h1)
+/* Methods DOM
+  -Acceder a los tags:
+    1- By ID
+    2- by class
+    3- By tagName
+*/
 
-// /* Metodos */
-// var h1ByTagName = document.getElementsByTagName('h1')
-// console.log(h1ByTagName)
-// h1ByTagName[0].innerHTML = 'Notas de Naomi' /* innerHTML es una propiedad */
+var h1ByTagName = document.getElementsByTagName('h1')
+console.log(h1ByTagName)
 
-// var button = document.getElementById('button')
-// console.log(button)
-// button.style.background = 'pink'
-// button.style.border = 'none'
+h1ByTagName[0].innerHTML = 'Notas de Naomi Lopez'
 
-// /* Registrando un evento */
-// var isClick = false
-// const clickMe = () => {
-//   isClick = !isClick
-//   button.innerHTML = isClick ? 'Presioname' : 'Me presiono'
-// }
-// button.addEventListener('click', clickMe)
+var sectionById = document.getElementById('notes')
+console.log(sectionById)
+
+var h1ByClass = document.getElementsByClassName('h1')
+console.log(h1ByClass)
+
+var button = document.getElementsByClassName('button')
+
+var isClick = false
+
+const clickMe = () => {
+  isClick = !isClick
+  button[0].innerHTML = isClick ? 'Presioname' : 'Me presiono'
+}
+
+button[0].addEventListener('click', clickMe)

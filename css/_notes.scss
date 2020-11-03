@@ -1,5 +1,6 @@
 
 #notes{
+
   margin: 30px auto;
   width: 80%;
 
@@ -33,7 +34,7 @@
       background-color: $bg-button-hover;
       box-shadow: 5px 5px 5px $bs-button-hover;
       margin: 0;
-      transition: margin 2s;
+      transition: margin 2s; 
     }
   }
 }
