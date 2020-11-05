@@ -16,6 +16,8 @@ document.title = 'DOM'
     1- By ID
     2- by class
     3- By tagName
+    4- querySelector:
+    documents.querySelector("p")
 */
 
 var h1ByTagName = document.getElementsByTagName('h1')
